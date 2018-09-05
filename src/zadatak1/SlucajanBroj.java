@@ -19,7 +19,7 @@ public class SlucajanBroj {
 		while (true) {
 
 			System.out.println("Unesite broj od 1 do 50");
-			
+			System.out.println("test");
 
 			unetBroj = ulaz.next();
 
