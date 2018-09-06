@@ -8,7 +8,7 @@ public class Digitron {
 	static Scanner ulaz = new Scanner(System.in);
 public static void main(String[] args) {
 	
-	int prviBroj;
+	int prviBroj1;
 	int drugiBroj;
 	String nastavak;
 	String operacija;
@@ -17,7 +17,7 @@ public static void main(String[] args) {
 	
 	while(true) {
 		System.out.println("Unesite prvi broj: ");
-		prviBroj = unosInt();
+		prviBroj1 = unosInt();
 		
 		System.out.println("Unesite drugi broj: ");
 		drugiBroj = unosInt();
@@ -30,15 +30,15 @@ public static void main(String[] args) {
 		
 		
 		switch (operacija){
-			case "s": System.out.println(prviBroj + drugiBroj);
+			case "s": System.out.println(prviBroj1 + drugiBroj);
 			break;
-			case "o": System.out.println(prviBroj - drugiBroj);
+			case "o": System.out.println(prviBroj1 - drugiBroj);
 			break;
-			case "m": System.out.println(prviBroj * drugiBroj);
+			case "m": System.out.println(prviBroj1 * drugiBroj);
 			break;
 			case "d": 
 				if(drugiBroj != 0)
-				System.out.println(prviBroj / (double)drugiBroj);
+				System.out.println(prviBroj1 / (double)drugiBroj);
 				else
 					System.out.println("Nije dozvoljeno deljenje sa nulom");
 			break;
