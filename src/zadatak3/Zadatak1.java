@@ -20,7 +20,7 @@ public class Zadatak1 {
 			while (b <= a) {
 
 				if (b % 2 == 0) {
-					System.out.println(b);
+					System.out.print(b + " ");
 				}
 				b++;
 			}
@@ -32,7 +32,7 @@ public class Zadatak1 {
 			while (a <= b) {
 
 				if (a % 2 == 0) {
-					System.out.println(a);
+					System.out.print(a + " ");
 				}
 				a++;
 			}
