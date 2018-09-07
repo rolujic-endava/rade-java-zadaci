@@ -1,4 +1,5 @@
 package zadatak3;
+
 import java.util.Scanner;
 
 public class Zadatak1 {
@@ -7,14 +8,13 @@ public class Zadatak1 {
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		
 
 		System.out.println("Unesite prvi broj: ");
 		a = unosInt();
 		System.out.println("Unesite drugi broj: ");
 		b = unosInt();
 		sc.close();
-		
+
 		if (b < a) {
 			System.out.println("Parni brojevi su: ");
 			while (b <= a) {
@@ -27,7 +27,7 @@ public class Zadatak1 {
 
 		}
 
-		else if (a < b) {
+		else if (a <= b) {
 			System.out.println("Parni brojevi su: ");
 			while (a <= b) {
 
@@ -35,12 +35,6 @@ public class Zadatak1 {
 					System.out.print(a + " ");
 				}
 				a++;
-			}
-		} else {
-			if (a % 2 == 0) {
-				System.out.println("Broj " + a + " je paran.");
-			} else {
-				System.out.println("Nema parnih brojeva!");
 			}
 		}
 	}
