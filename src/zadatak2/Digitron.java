@@ -1,4 +1,17 @@
+/**
+ * Napisati program koji ce predstavljati jednostavan digitron. Program treba da radi tako sto
+ * korisnik unese dva cela broja, zatim kod operacije koji zeli da izvrsi ('s' - sabiranje, 'o' -
+ * oduzimanje, 'm' - mnozenje, 'd' - deljenje). Kao rezultat se ocekuje ispisivanje rezultata
+ * te operacije nad unetim operandima.
+ *
+ */
+
 package zadatak2;
+
+/**
+ * @author Radovan.Olujic
+ *
+ */
 
 import java.util.Scanner;
 

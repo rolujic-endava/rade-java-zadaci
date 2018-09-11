@@ -1,4 +1,15 @@
+/**
+ * Koriscenjem while petlje ispsiati sve parne broejve izmedju brojeva a i b koji se unose preko
+ * standardnog ulaza.
+ *
+ */
+
 package zadatak3;
+
+/**
+ * @author Radovan.Olujic
+ *
+ */
 
 import java.util.Scanner;
 
