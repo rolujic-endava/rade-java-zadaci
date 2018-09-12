@@ -21,27 +21,57 @@ public class NizBrojeva {
 
 	public static void main(String[] args) {
 
-		while(duzinaNiza < 5) {
-		System.out.println("Unesite duzinu niza(minimalno 5!): ");
+		while (duzinaNiza < 5) {
+			System.out.println("Unesite duzinu niza(minimalno 5!): ");
 
-		duzinaNiza = unosInt();
+			duzinaNiza = unosInt();
 		}
-		
 
 		niz = new int[duzinaNiza];
 
 		System.out.println("Unesite clanove niza: ");
 		for (int i = 0; i < niz.length; i++) {
-			niz[i] = ulaz.nextInt();
+			niz[i] = unosInt();
 		}
 
 		System.out.println("Unesite broj x (ispitivanje da li je clan niza): ");
 		x = unosInt();
 
+		sortiraj();
+
+		proveraBrojauNizu();
+
+		prvihPet();
+
+		ulaz.close();
+
+	}
+
+	/**
+	 * sortiranje niza
+	 */
+	private static void sortiraj() {
 		Arrays.sort(niz);
 
+	}
+
+	/**
+	 * ispisuje prvih 5 clanova niza
+	 */
+	private static void prvihPet() {
+		System.out.println("Prvih 5 clanova niza su: ");
+		for (int i = 0; i < 5; i++) {
+			System.out.print(niz[i] + " ");
+		}
+
+	}
+
+	/**
+	 * provera da li se zadati broj nalazi u datom nizu
+	 */
+	private static void proveraBrojauNizu() {
 		for (int i = 0; i < niz.length; i++) {
-			
+
 			if (niz[i] == x) {
 				postoji = 1;
 
@@ -49,18 +79,13 @@ public class NizBrojeva {
 		}
 
 		if (postoji == 1) {
-			System.out.println("\nZadati niz sadrzi broj " + x + "\n");
+			System.out.println("Zadati niz sadrzi broj " + x + "\n");
 
 		} else
-			System.out.println("\nZadati broj " + x + " nije clan datog niza.\n");
-
-		System.out.println("Prvih 5 clanova niza su: ");
-		for (int i = 0; i < 5; i++) {
-			System.out.print(niz[i] + " ");
-		}
+			System.out.println("Zadati broj " + x + " nije clan datog niza.\n");
 
 	}
-	
+
 	private static int unosInt() {
 
 		while (!ulaz.hasNextInt()) {
