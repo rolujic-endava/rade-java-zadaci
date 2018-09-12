@@ -11,15 +11,10 @@ public class Kuca extends Nekretnina {
 
 	private double povrsinaOkucnice;
 
-	
-	/**
-	 * 
-	 */
 	public Kuca() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
 
 	/**
 	 * @param adresa
@@ -32,8 +27,6 @@ public class Kuca extends Nekretnina {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-
 	/**
 	 * @param adresa
 	 * @param zona
@@ -43,13 +36,11 @@ public class Kuca extends Nekretnina {
 	 */
 	public Kuca(String adresa, int zona, double kvadratura, Vlasnik vlasnik, double povrsinaOkucnice) {
 		super(adresa, zona, kvadratura, vlasnik);
-		if(0 < povrsinaOkucnice)
+		if (0 < povrsinaOkucnice)
 			this.povrsinaOkucnice = povrsinaOkucnice;
 		else
 			throw new IllegalArgumentException("Pogresan unos! - Unesite kvadraturu ponovo.");
 	}
-
-	
 
 	/**
 	 * @return the povrsinaOkucnice
@@ -58,20 +49,19 @@ public class Kuca extends Nekretnina {
 		return povrsinaOkucnice;
 	}
 
-
 	/**
 	 * @param povrsinaOkucnice the povrsinaOkucnice to set
 	 */
 	public void setPovrsinaOkucnice(double povrsinaOkucnice) {
-		if(0 < povrsinaOkucnice)
+		if (0 < povrsinaOkucnice)
 			this.povrsinaOkucnice = povrsinaOkucnice;
 		else
 			throw new IllegalArgumentException("Pogresan unos! - Unesite kvadraturu ponovo.");
 	}
 
-	
-
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see zadatak9.Nekretnina#racunanjeCene()
 	 */
 	@Override
@@ -80,17 +70,14 @@ public class Kuca extends Nekretnina {
 		return this.getKvadratura() * this.cenaKvadrata() + povrsinaOkucnice * this.cenaKvadrata() * 0.15;
 	}
 
-
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Kuca [povrsinaOkucnice=" + povrsinaOkucnice + ", racunanjeCene()=" + racunanjeCene() + ", getAdresa()="
-				+ getAdresa() + ", getZona()=" + getZona() + ", getKvadratura()=" + getKvadratura() + ", getVlasnik()="
-				+ getVlasnik() + ", cenaKvadrata()=" + cenaKvadrata() + "]";
+		return super.toString() + ", povrsina okucnice: " + povrsinaOkucnice;
 	}
-	
-	
-	
+
 }

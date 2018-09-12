@@ -25,9 +25,9 @@ public class Main {
 
 		try {
 			Nekretnina kuca = new Kuca("Vidovdanska 52", 1, 120.20,
-					new Vlasnik("Petar", "Petrovic", "1312978898112", 11218), 300.00);
+					new Vlasnik("Petar", "Petrovic", "1312879883632", "113411111"),220.50);
 			Nekretnina stan = new Stan("Marsala Tita 103", 2, 52.88,
-					new Vlasnik("Jelena", "Jelic", "0604989388123", 111012), 52.88, 8.22);
+					new Vlasnik("Ivana", "Ivanovic", "0604998366675", "221222245"), 52.88, 8.22);
 
 			System.out.println(kuca.toString());
 			System.out.println(stan.toString());
