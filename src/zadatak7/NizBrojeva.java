@@ -20,6 +20,7 @@ public class NizBrojeva {
 	static int niz[];
 
 	public static void main(String[] args) {
+		int n = 5;
 
 		while (duzinaNiza < 5) {
 			System.out.println("Unesite duzinu niza(minimalno 5!): ");
@@ -37,11 +38,11 @@ public class NizBrojeva {
 		System.out.println("Unesite broj x (ispitivanje da li je clan niza): ");
 		x = unosInt();
 
-		sortiraj();
+		sortiraj(niz);
 
-		proveraBrojauNizu();
+		proveraBrojauNizu(x);
 
-		prvihPet();
+		prvihNclanovaNiza(n);
 
 		ulaz.close();
 
@@ -50,7 +51,7 @@ public class NizBrojeva {
 	/**
 	 * sortiranje niza
 	 */
-	private static void sortiraj() {
+	private static void sortiraj(int niz[]) {
 		Arrays.sort(niz);
 
 	}
@@ -58,9 +59,9 @@ public class NizBrojeva {
 	/**
 	 * ispisuje prvih 5 clanova niza
 	 */
-	private static void prvihPet() {
-		System.out.println("Prvih 5 clanova niza su: ");
-		for (int i = 0; i < 5; i++) {
+	private static void prvihNclanovaNiza(int n) {
+		System.out.println("Prvih " + n + " clanova niza su: ");
+		for (int i = 0; i < n; i++) {
 			System.out.print(niz[i] + " ");
 		}
 
@@ -69,7 +70,7 @@ public class NizBrojeva {
 	/**
 	 * provera da li se zadati broj nalazi u datom nizu
 	 */
-	private static void proveraBrojauNizu() {
+	private static void proveraBrojauNizu(int x) {
 		for (int i = 0; i < niz.length; i++) {
 
 			if (niz[i] == x) {
