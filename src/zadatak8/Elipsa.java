@@ -28,6 +28,23 @@ public class Elipsa extends Krug{
 		super(poluprecnik);
 		this.poluprecnik2 = poluprecnik2;
 	}
+	
+
+
+	/**
+	 * @return the poluprecnik2
+	 */
+	public double getPoluprecnik2() {
+		return poluprecnik2;
+	}
+
+
+	/**
+	 * @param poluprecnik2 the poluprecnik2 to set
+	 */
+	public void setPoluprecnik2(double poluprecnik2) {
+		this.poluprecnik2 = poluprecnik2;
+	}
 
 
 	/* (non-Javadoc)

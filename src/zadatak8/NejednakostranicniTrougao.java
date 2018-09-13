@@ -27,6 +27,35 @@ public class NejednakostranicniTrougao extends Trougao{
 		this.strB = strB;
 		this.strC = strC;
 	}
+	
+
+	/**
+	 * @return the strB
+	 */
+	public double getStrB() {
+		return strB;
+	}
+
+	/**
+	 * @param strB the strB to set
+	 */
+	public void setStrB(double strB) {
+		this.strB = strB;
+	}
+
+	/**
+	 * @return the strC
+	 */
+	public double getStrC() {
+		return strC;
+	}
+
+	/**
+	 * @param strC the strC to set
+	 */
+	public void setStrC(double strC) {
+		this.strC = strC;
+	}
 
 	/* (non-Javadoc)
 	 * @see zadatak8.Trougao#povrsina()
