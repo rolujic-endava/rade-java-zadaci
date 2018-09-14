@@ -13,8 +13,6 @@ public class Stan extends Nekretnina {
 	private double povrsinaTerease;
 
 	public Stan() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -25,7 +23,6 @@ public class Stan extends Nekretnina {
 	 */
 	public Stan(String adresa, int zona, double kvadratura, Vlasnik vlasnik) {
 		super(adresa, zona, kvadratura, vlasnik);
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -90,7 +87,6 @@ public class Stan extends Nekretnina {
 	 */
 	@Override
 	public double racunanjeCene() {
-		// TODO Auto-generated method stub
 		return this.getKvadratura() * this.cenaKvadrata()
 				+ ((povrsinaPodruma + povrsinaTerease) * this.cenaKvadrata() * 0.33);
 	}

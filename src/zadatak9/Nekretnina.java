@@ -18,8 +18,6 @@ public abstract class Nekretnina {
 	 * 
 	 */
 	protected Nekretnina() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
