@@ -98,9 +98,7 @@ public class Stan extends Nekretnina {
 	 */
 	@Override
 	public String toString() {
-		return "Stan [povrsinaPodruma=" + povrsinaPodruma + ", povrsinaTerease=" + povrsinaTerease
-				+ ", racunanjeCene()=" + racunanjeCene() + ", getAdresa()=" + getAdresa() + ", getZona()=" + getZona()
-				+ ", getKvadratura()=" + getKvadratura() + ", getVlasnik()=" + getVlasnik() + "]";
+		return super.toString() + ", povrsina podruma: " + povrsinaPodruma + ", povrsina terase: " + povrsinaTerease;
 	}
 
 }

@@ -12,7 +12,7 @@ public class Vlasnik {
 	private String ime;
 	private String prezime;
 	private String jmbg;
-	private int brojLK;
+	private String brojLK;
 
 	public Vlasnik() {
 	}
@@ -23,8 +23,9 @@ public class Vlasnik {
 	 * @param jMBG
 	 * @param brojLK
 	 */
-	public Vlasnik(String ime, String prezime, String jmbg, int brojLK) {
-		super();
+
+	public Vlasnik(String ime, String prezime, String jmbg, String brojLK) {
+
 		if (ime.matches("^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$"))
 			this.ime = ime;
 		else
@@ -37,7 +38,11 @@ public class Vlasnik {
 			this.jmbg = jmbg;
 		else
 			throw new IllegalArgumentException("Pogresan unos! - JMBG mora da sadrzi 13 cifara.");
-		this.brojLK = brojLK;
+		if (brojLK.length() == 9 && brojLK.matches("[0-9]+"))
+			this.brojLK = brojLK;
+		else
+			throw new IllegalArgumentException("Pogresan unos! - Unesite ponovo Vas broj licne karte.");
+
 	}
 
 	/**
@@ -94,15 +99,18 @@ public class Vlasnik {
 	/**
 	 * @return the brojLK
 	 */
-	public int getBrojLK() {
+	public String getBrojLK() {
 		return brojLK;
 	}
 
 	/**
 	 * @param brojLK the brojLK to set
 	 */
-	public void setBrojLK(int brojLK) {
-		this.brojLK = brojLK;
+	public void setBrojLK(String brojLK) {
+		if (brojLK.length() == 9 && brojLK.matches("[0-9]+"))
+			this.brojLK = brojLK;
+		else
+			throw new IllegalArgumentException("Pogresan unos! - Unesite ponovo Vas broj licne karte.");
 	}
 
 	/*
@@ -112,7 +120,9 @@ public class Vlasnik {
 	 */
 	@Override
 	public String toString() {
-		return "Vlasnik [ime=" + ime + ", prezime=" + prezime + ", JMBG=" + jmbg + ", brojLK=" + brojLK + "]";
+
+		return " [ime=" + ime + ", prezime=" + prezime + ", JMBG=" + jmbg + ", brojLK=" + brojLK + "]";
+
 	}
 
 }

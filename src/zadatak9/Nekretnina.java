@@ -14,9 +14,6 @@ public abstract class Nekretnina {
 	private double kvadratura;
 	private Vlasnik vlasnik;
 
-	/**
-	 * 
-	 */
 	protected Nekretnina() {
 	}
 
@@ -121,8 +118,8 @@ public abstract class Nekretnina {
 	 */
 	@Override
 	public String toString() {
-		return "Nekretnina [adresa=" + adresa + ", zona=" + zona + ", kvadratura=" + kvadratura + ", vlasnik=" + vlasnik
-				+ ", racunanjeCene()=" + racunanjeCene() + "]";
+		return this.getClass().getSimpleName() + "[adresa=" + adresa + ", zona=" + zona + ", kvadratura=" + kvadratura
+				+ ", vlasnik=" + vlasnik + ", racunanjeCene()=" + racunanjeCene() + "]";
 	}
 
 }

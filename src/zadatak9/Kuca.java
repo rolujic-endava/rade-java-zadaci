@@ -11,9 +11,6 @@ public class Kuca extends Nekretnina {
 
 	private double povrsinaOkucnice;
 
-	/**
-	 * 
-	 */
 	public Kuca() {
 	}
 
@@ -77,9 +74,7 @@ public class Kuca extends Nekretnina {
 	 */
 	@Override
 	public String toString() {
-		return "Kuca [povrsinaOkucnice=" + povrsinaOkucnice + ", racunanjeCene()=" + racunanjeCene() + ", getAdresa()="
-				+ getAdresa() + ", getZona()=" + getZona() + ", getKvadratura()=" + getKvadratura() + ", getVlasnik()="
-				+ getVlasnik() + ", cenaKvadrata()=" + cenaKvadrata() + "]";
+		return super.toString() + ", povrsina okucnice: " + povrsinaOkucnice;
 	}
 
 }
