@@ -14,8 +14,6 @@ public abstract class Proizvodi {
 	private String rokTrajanja;
 
 	public Proizvodi() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -24,7 +22,6 @@ public abstract class Proizvodi {
 	 * @param rokTrajanja
 	 */
 	public Proizvodi(String ime, double cena, String rokTrajanja) {
-		super();
 		this.ime = ime;
 		this.cena = cena;
 		this.rokTrajanja = rokTrajanja;

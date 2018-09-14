@@ -10,13 +10,12 @@ package zadatak10;
 public class Kafa extends Proizvodi {
 
 	private boolean samlevena;
-	private final int PDV = 8;
+	private final double PDV = 0.08;
 
 	/**
 	 * @param samlevena
 	 */
 	public Kafa(boolean samlevena) {
-		super();
 		this.samlevena = samlevena;
 	}
 
@@ -56,7 +55,7 @@ public class Kafa extends Proizvodi {
 	/**
 	 * @return the pDV
 	 */
-	public int getPDV() {
+	public double getPDV() {
 		return PDV;
 	}
 
@@ -68,7 +67,7 @@ public class Kafa extends Proizvodi {
 	@Override
 	public double ukupnaCena() {
 		// TODO Auto-generated method stub
-		return getCena() + (getCena() * PDV / 100.0);
+		return getCena() + (getCena() * PDV);
 	}
 
 	/*
@@ -78,7 +77,7 @@ public class Kafa extends Proizvodi {
 	 */
 	@Override
 	public String toString() {
-		return "Kafa [" + super.toString() + ", samlevena=" + samlevena + ", PDV=" + PDV + ", ukupnaCena="
+		return "Kafa [" + super.toString() + ", samlevena=" + ((samlevena) ? "mlevena" : "u zrnu") + ", PDV=" + PDV + ", ukupnaCena="
 				+ ukupnaCena() + "]";
 	}
 

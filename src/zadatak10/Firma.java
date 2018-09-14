@@ -20,7 +20,6 @@ public class Firma {
 	 * @param listaProizvoda
 	 */
 	public Firma(double kapital, ArrayList<Proizvodi> listaProizvoda) {
-		super();
 		this.kapital = kapital;
 		this.listaProizvoda = listaProizvoda;
 	}
@@ -54,5 +53,5 @@ public class Firma {
 	public double getKapital() {
 		return kapital;
 	}
-	
+
 }

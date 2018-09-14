@@ -9,8 +9,8 @@ package zadatak10;
  */
 public class Sokovi extends Proizvodi {
 
-	private String odCegaJe;
-	private final int PDV = 20;
+	private String sastav;
+	private final double PDV = 0.2;
 
 	public Sokovi() {
 		super();
@@ -24,28 +24,28 @@ public class Sokovi extends Proizvodi {
 	 */
 	public Sokovi(String ime, double cena, String rokTrajanja, String odCegaje) {
 		super(ime, cena, rokTrajanja);
-		this.odCegaJe = odCegaje;
+		this.sastav = odCegaje;
 		// TODO Auto-generated constructor stub
 	}
 
 	/**
 	 * @return the odCegaJe
 	 */
-	public String getOdCegaJe() {
-		return odCegaJe;
+	public String getSastav() {
+		return sastav;
 	}
 
 	/**
 	 * @param odCegaJe the odCegaJe to set
 	 */
-	public void setOdCegaJe(String odCegaJe) {
-		this.odCegaJe = odCegaJe;
+	public void setSastav(String odCegaJe) {
+		this.sastav = odCegaJe;
 	}
 
 	/**
 	 * @return the pDV
 	 */
-	public int getPDV() {
+	public double getPDV() {
 		return PDV;
 	}
 
@@ -57,7 +57,7 @@ public class Sokovi extends Proizvodi {
 	@Override
 	public double ukupnaCena() {
 		// TODO Auto-generated method stub
-		return getCena() + (getCena() * PDV / 100.0);
+		return getCena() + (getCena() * PDV);
 	}
 
 	/*
@@ -67,7 +67,7 @@ public class Sokovi extends Proizvodi {
 	 */
 	@Override
 	public String toString() {
-		return "Sokovi [" + super.toString() + ", odCegaJe=" + odCegaJe + ", PDV=" + PDV + ", ukupnaCena="
+		return "Sokovi [" + super.toString() + ", sastav=" + sastav + ", PDV=" + PDV + ", ukupnaCena="
 				+ ukupnaCena() + "]";
 	}
 

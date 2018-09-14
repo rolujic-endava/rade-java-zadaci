@@ -10,7 +10,7 @@ package zadatak10;
 public class Meso extends Proizvodi {
 
 	private String zivotinjskoPoreklo;
-	private final int PDV = 8;
+	private final double PDV = 0.08;
 
 	public Meso() {
 		super();
@@ -45,7 +45,7 @@ public class Meso extends Proizvodi {
 	/**
 	 * @return the pDV
 	 */
-	public int getPDV() {
+	public double getPDV() {
 		return PDV;
 	}
 
@@ -57,7 +57,7 @@ public class Meso extends Proizvodi {
 	@Override
 	public double ukupnaCena() {
 		// TODO Auto-generated method stub
-		return getCena() + (getCena() * PDV / 100.0);
+		return getCena() + (getCena() * PDV);
 	}
 
 	/*

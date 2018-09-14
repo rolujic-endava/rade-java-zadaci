@@ -10,7 +10,7 @@ package zadatak10;
 public class Mlecni extends Proizvodi {
 
 	private String porekloMleka;
-	private final int PDV = 20;
+	private final double PDV = 0.2;
 
 	public Mlecni() {
 		super();
@@ -53,7 +53,7 @@ public class Mlecni extends Proizvodi {
 	/**
 	 * @return the pDV
 	 */
-	public int getPDV() {
+	public double getPDV() {
 		return PDV;
 	}
 
@@ -65,7 +65,7 @@ public class Mlecni extends Proizvodi {
 	@Override
 	public double ukupnaCena() {
 		// TODO Auto-generated method stub
-		return getCena() + (getCena() * PDV / 100.0);
+		return getCena() + (getCena() * PDV);
 	}
 
 	/*
