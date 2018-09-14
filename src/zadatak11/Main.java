@@ -1,5 +1,19 @@
 /**
- * 
+ * Napisati program koji opisuje sledeci scenario:
+ * Firma posedujeniz privatnih bolnica. Svaka bolnica ima svoje zaposlene. Zaposleni mogu biti:
+ * 		- Lekari
+ * 		- Osoblje
+ * 		- Medicinske sestre.
+ * Bolnica sadrzi informacije o nazivu, direktoru i broju zaposlenih. Podaci koji se cuvaju o lekaru su:
+ * 		- Fakultet
+ * 		- Ime
+ * 		- Prezime
+ * 		- Adresa
+ * 		- Telefon
+ * 		- Datum rodjenja.
+ * O osobllju cuvamo iste stvari, osim informacije o fakultetu. Za medicinske sestre jos i smenu. Firma
+ * sadrzi metodu toString() koja ispisuje koliko poseduje bolnica i lekara, medicinskih sestara i 
+ * osoblja ponaosob.  
  */
 package zadatak11;
 
