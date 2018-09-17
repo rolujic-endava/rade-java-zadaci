@@ -4,7 +4,6 @@
 package zadatak10;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * @author Radovan.Olujic

@@ -25,38 +25,34 @@ public class Main {
 
 		Proizvodi mleko = new Mlecni("sir", 750.00, "decembar 2018", "kravlje");
 		Proizvodi meso = new Meso("but", 850.00, "jun 2019", "junetina");
-		Proizvodi kafa = new Kafa("Minas", 240.00, "januar 2020", true);
+		Proizvodi kafa = new Kafa("Minas", 240.00, "januar 2020", TipKafe.samlevena);
 		Proizvodi sokovi = new Sokovi("Nektar", 120.20, "novembar 2018", "jagoda");
-		
+
 		ArrayList<Proizvodi> lista = new ArrayList<>();
 		lista.add(mleko);
 		lista.add(meso);
 		lista.add(kafa);
 		lista.add(sokovi);
-		
+
 		System.out.println("Scenario 1: Imamo dovoljno sredstava, izvrsena kupovina.");
 		Firma firma = new Firma(2200, lista);
-		
+
 		firma.porudzbina();
 		System.out.println();
 		Firma firma1 = new Firma(1200, lista);
-		
+
 		System.out.println("Scenario 2: Nismo ubacili ni jedan proizvod u listu zelja.");
 		firma1.porudzbina();
-		
+
 		lista.add(mleko);
 		lista.add(meso);
 		lista.add(kafa);
 		lista.add(sokovi);
 		Firma firma2 = new Firma(1200, lista);
-		
+
 		System.out.println();
 		System.out.println("Scenario 3: Nemamo dovoljno sredstava.");
 		firma2.porudzbina();
-		
-		
-		
 
-		
 	}
 }

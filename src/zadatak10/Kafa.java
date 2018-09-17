@@ -9,14 +9,15 @@ package zadatak10;
  */
 public class Kafa extends Proizvodi {
 
-	private boolean samlevena;
+	// private boolean samlevena;
+	private TipKafe tipKafe;
 	private final double PDV = 0.08;
 
 	/**
 	 * @param samlevena
 	 */
-	public Kafa(boolean samlevena) {
-		this.samlevena = samlevena;
+	public Kafa(TipKafe tipKafe) {
+		this.tipKafe = tipKafe;
 	}
 
 	/**
@@ -32,24 +33,31 @@ public class Kafa extends Proizvodi {
 	 * @param cena
 	 * @param rokTrajanja
 	 */
-	public Kafa(String ime, double cena, String rokTrajanja, boolean samlevena) {
+	public Kafa(String ime, double cena, String rokTrajanja, TipKafe tipKafe) {
 		super(ime, cena, rokTrajanja);
-		this.samlevena = samlevena;
+		this.tipKafe = tipKafe;
 		// TODO Auto-generated constructor stub
 	}
 
 	/**
 	 * @return the samlevena
 	 */
-	public boolean isSamlevena() {
-		return samlevena;
-	}
+//	public boolean isSamlevena() {
+//		return samlevena;
+//	}
 
-	/**
-	 * @param samlevena the samlevena to set
-	 */
-	public void setSamlevena(boolean samlevena) {
-		this.samlevena = samlevena;
+	public TipKafe getTipKafe() {
+		return tipKafe;
+	}
+//	/**
+//	 * @param samlevena the samlevena to set
+//	 */
+//	public void setSamlevena(boolean samlevena) {
+//		this.samlevena = samlevena;
+//	}
+
+	public void setTipKafe(TipKafe tipKafe) {
+		this.tipKafe = tipKafe;
 	}
 
 	/**
@@ -77,8 +85,8 @@ public class Kafa extends Proizvodi {
 	 */
 	@Override
 	public String toString() {
-		return "Kafa [" + super.toString() + ", samlevena=" + ((samlevena) ? "mlevena" : "u zrnu") + ", PDV=" + PDV + ", ukupnaCena="
-				+ ukupnaCena() + "]";
+		return "Kafa [" + super.toString() + ", tip kafe=" + tipKafe + ", PDV=" + PDV + ", ukupnaCena=" + ukupnaCena()
+				+ "]";
 	}
 
 	/*
